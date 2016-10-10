@@ -16,8 +16,8 @@ The other comparison that we can do and will help us understand that we should a
 10000 requests with 1000 concurrency the server needed 3.291ms to respond for every request when we 've used the fs route
 10000 requests with 1000 concurrency the server needed 1.756ms to respond for every request when we 've used the no fs route
 
-**touch-fs**
-
+## touch-fs
+```
 $ ab -n 10000 -c 1000 http://localhost:3000/touch-fs
 This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
@@ -72,8 +72,10 @@ Percentage of the requests served within a certain time (ms)
   98%   9110
   99%  21166
  100%  32880 (longest request)
+```
 
- *no-fs*
+## no-fs
+```
 $ ab -n 10000 -c 1000 http://localhost:3000/no-fs
 This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
@@ -128,3 +130,4 @@ Percentage of the requests served within a certain time (ms)
   98%  15971
   99%  16089
  100%  17522 (longest request)
+```
