@@ -1,4 +1,4 @@
-block i/o simulation
+# block i/o simulation
 
 There are 4 routes defined in the project:
 - route / : route that responds with a string without blocking something
@@ -16,7 +16,7 @@ The other comparison that we can do and will help us understand that we should a
 10000 requests with 1000 concurrency the server needed 3.291ms to respond for every request when we 've used the fs route
 10000 requests with 1000 concurrency the server needed 1.756ms to respond for every request when we 've used the no fs route
 
-*touch-fs*
+**touch-fs**
 
 $ ab -n 10000 -c 1000 http://localhost:3000/touch-fs
 This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
